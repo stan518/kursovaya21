@@ -33,7 +33,17 @@ export default function Summary({coinId}) {
         <CryptoInfo />
         <Grid container spacing={3}>
             <Grid item xs={4} className={classes.selectEmpty} >
-            
+            <FormControl variant="outlined" className={classes.formControl}>
+                    <InputLabel classname={classes.selectEmpty} htmlFor="age-native-simple"></InputLabel>
+                    <Select
+                    native
+                    value={coinname}
+                    onChange={handleChange}>
+                        
+                        {coinId.map(item => ( 
+                        <option value={item.id} key={item.id}>{item.name}</option>))}
+                    </Select>
+            </FormControl>
             </Grid>
         </Grid>
         <Grid container spacing={3}>    
