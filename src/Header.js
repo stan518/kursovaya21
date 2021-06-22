@@ -103,7 +103,36 @@ function Header() {
           </Container>
         </AppBar>
       </div>
-      
+      <main>   
+          <Paper className={classes.mainFeaturesPost}
+      style={{backgroundImage : 'url(https://source.unsplash.com/random)'}} gutterBottom>
+        <Container maxWidth='lg'>
+          <div className={classes.overlay}>
+          <Grid container >
+          <Grid item md={6}>
+            <div className={classes.mainFeaturesPostContent}>
+                <Typography
+                component="h1"
+                variant="h3"
+                color="inherit"
+                gutterBottom>
+                  Курсовая работа</Typography>
+                  <Typography
+                variant="h6"
+                color="inherit"
+                paragraph>
+                  Тема: "Клиентское приложение для
+                  анализа и статистики торгов
+                  на бирже криптовалют"       
+                  Подготовил К.Ю. Шашков</Typography>
+                  <Button variant="contained" color="secondary">Узнать больше</Button>
+            </div>
+          </Grid>
+          </Grid>
+          </div>
+        </Container>
+        </Paper>
+        </main>
 
     </Router>
 
