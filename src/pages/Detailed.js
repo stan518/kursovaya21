@@ -63,15 +63,15 @@ useEffect(() => {
         </Container>
     )
                         }
-function PrepareData(data){
-    const chartPrice = {
-        count:[],
-        price:[]
-    };
-
-    data.forEach((d) => {
-        chartPrice.count.push(Number((String(d).substr(0,10))));
-        chartPrice.price.push(Number((String(d).substr(11, 5))));
-    });
+                        function PrepareData(data){
+                            const chartPrice = {
+                                count:[],
+                                price:[]
+                            };
+                        
+                            data.forEach((d) => {
+                                chartPrice.count.push(Number((String(d).substr(0,10))));
+                                chartPrice.price.push(Number((String(d).substr(11, 5))));
+                            });
 return chartPrice;
 }
