@@ -52,7 +52,7 @@ export default function Summary({coinId}) {
                 <Paper style={infoBlockStyle} >
                     <Typography variant="subtitle1">Market: {items.exchange} </Typography>
                     <Typography variant="h6">Price: {items.price} </Typography>
-                    <Typography variant="subtitle1">Pair: {items.pair} </Typography>
+                    
                     <Typography variant="subtitle1">Volume: {items.volume} </Typography>
                 </Paper>
             </Grid>
